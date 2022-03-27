@@ -1,0 +1,41 @@
+@import '../../../scss/index.scss';
+
+.menu-top{
+    display: flex;
+    //background-color: $background-light;
+    button{
+        background-color:transparent;
+        color: $font-light;
+        border: 0;
+
+        &:hover{
+            color: $primary-color;
+            background-color: transparent;
+            border: 0;
+        }
+        &:focus,
+        &:active{
+            background-color: transparent;
+            color:$font-light;
+            border: 0;
+        }
+    }
+
+    &__left{
+        color: $font-logo-rest;
+        font-size: $defaultFontSize;
+        &-logo{
+            width: 80px;
+            padding: 0 10px;
+            
+            &__ini{
+                color: $font-logo-ini;
+            }
+        }
+    }
+
+    &__right{
+        position: absolute;
+        right: 0;
+    }
+}
