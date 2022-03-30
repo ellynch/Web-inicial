@@ -14,7 +14,7 @@ export default function LayoutAdmin(props) {
     const { Header, Content, Footer } = Layout;
 
     const user = null;
-    //const location = useLocation();
+    const location = useLocation();
 
     if (!user) {
         return (
