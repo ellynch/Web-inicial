@@ -20,11 +20,11 @@ export default function LayoutAdmin(props) {
         return (
             <>
 
-                <AdminSignIn />
-                {/*<Route path='/admin/login' element={<AdminSignIn />} />*/}
+                <AdminSignIn /> /*esta funciona bien, pero, no realiza la redirección*/
+                {/*<Route path='/admin/login' element={<AdminSignIn />} />*/} /*esta no funciona*/
 
 
-                {/* <Navigate to={'/admin/login'} replace />*/}
+                {/* <Navigate to={'/admin/login'} replace />*/} /*esta funciona pero genera el loop infinito.*/
             </>
         );
     }
